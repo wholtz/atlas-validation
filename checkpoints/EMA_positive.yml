@@ -1,0 +1,14 @@
+name: EMA_positive
+config_version:
+module_name: great_expectations.checkpoint
+class_name: LegacyCheckpoint
+validation_operator_name:
+batches:
+  - batch_kwargs:
+      reader_options:
+        header: 0
+      path: /Users/WJHoltz/atlas/data/MSMLS_HILICz150mm_Annotation20190824_Template_EMA_Unlabeled_Positive.csv
+      datasource: atlas
+      data_asset_name: MSMLS_HILICz150mm_Annotation20190824_Template_EMA_Unlabeled_Positive
+    expectation_suite_names:
+      - atlas
