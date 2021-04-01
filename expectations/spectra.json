@@ -1,0 +1,85 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "spectra",
+  "expectations": [
+    {
+      "expectation_type": "expect_compound_columns_to_be_unique",
+      "kwargs": {
+        "column_list": [
+          "inchi_key",
+          "adduct"
+        ],
+        "ignore_row_if": "any_value_is_missing"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_compound_columns_to_be_unique",
+      "kwargs": {
+        "column_list": [
+          "inchi_key",
+          "adduct",
+          "polarity"
+        ],
+        "ignore_row_if": "any_value_is_missing"
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "columns": {
+      "adduct": {
+        "description": ""
+      },
+      "collision_energy": {
+        "description": ""
+      },
+      "database": {
+        "description": ""
+      },
+      "decimal": {
+        "description": ""
+      },
+      "exact_mass": {
+        "description": ""
+      },
+      "formula": {
+        "description": ""
+      },
+      "fragmentation_method": {
+        "description": ""
+      },
+      "id": {
+        "description": ""
+      },
+      "inchi": {
+        "description": ""
+      },
+      "inchi_key": {
+        "description": ""
+      },
+      "instrument": {
+        "description": ""
+      },
+      "instrument_type": {
+        "description": ""
+      },
+      "name": {
+        "description": ""
+      },
+      "polarity": {
+        "description": ""
+      },
+      "precursor_mz": {
+        "description": ""
+      },
+      "smiles": {
+        "description": ""
+      },
+      "spectrum": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.13.15"
+  }
+}
